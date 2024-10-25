@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+
+body {
+    background-color: #304437; 
+    color: #e9f1e7; 
+    font-family: 'Poppins', sans-serif; 
+    margin: 0;
+    padding: 20px;
+    line-height: 1.7; 
+}
+
+/* MENU DE OPÇÕES */
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 30px;
+    display: flex; 
+    gap: 20px; 
+    justify-content: flex-end;
+    border-bottom: 2px solid #5cb964; 
+    padding-bottom: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #e9f7ef;
+    font-weight: 600; 
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #5cbb5c; 
+}
+
+/* Estilo dos links gerais */
+a {
+    color: #a4f1b8;
+    text-decoration: none;
+    transition: color 0.3s ease; 
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #59b869;
+}
+
+/* Estilo do título principal */
+#title {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em; 
+    color: #b5e6bb; 
+    font-weight: 700;
+    animation: fadout;
+}
+
+/* Estilo para subtítulos */
+h3 {
+    text-align: center;
+    margin-top: 20px; 
+    color: #ffffff; 
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+/* Estilo para o parágrafo */
+p {
+    text-align: center;
+    font-size: 1.1em; 
+    background-color: #2f4132;
+    border: 2px solid #3d4e3e;
+    border-radius: 15px;
+    padding: 15px;
+    max-width: 800px;
+    margin: 15px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.0s ease;
+}
+
+p:hover {
+    transform: scale(1.02);
+}
+
+/* Estilo para imagens */
+img {
+    border-radius: 8px;
+    border: 2px solid #57b864; 
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 20px auto; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h3 {
+        font-size: 1.6em;
+    }
+
+    p {
+        font-size: 0.9em;
+        padding: 12px;
+    }
+
+    img {
+        width: 100%;
+    }
+}
